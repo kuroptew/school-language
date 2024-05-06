@@ -1,19 +1,38 @@
 .btn {
-  width: 220px;
-  height: 70px;
-  border: 2px solid $blue-black;
   border-radius: 5px;
-  font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
-  color:$blue-black;
+  color: #fff;
+  background-color: $blue-black;
   text-align: center;
-  background-color: #fff;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 
-  &:hover {
-    background-color:$blue-black;
-    color:$grey;
+  &_light {
+    width: 220px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $blue-black;
+    background-color: transparent;
+    border: 2px solid $blue-black;
+
+    &:hover {
+      background-color: $blue-black;
+      color: #FFF;
+    }
+  }
+
+  &_big {
+    width: 438px;
+    height: 118px;
+    border-radius: 15px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+
+    &:hover {
+      color: $blue-black;
+      background-color: transparent;
+    }
   }
 }
