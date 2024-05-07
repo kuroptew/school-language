@@ -1,5 +1,9 @@
 .btn {
+  width: 230px;
+  height: 60px;
   border-radius: 5px;
+  font-size: 18px;
+  line-height: 27px;
   font-weight: 500;
   color: #fff;
   background-color: $blue-black;
@@ -18,7 +22,7 @@
 
     &:hover {
       background-color: $blue-black;
-      color: #FFF;
+      color: #fff;
     }
   }
 
