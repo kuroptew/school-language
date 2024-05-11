@@ -1,9 +1,16 @@
 .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   min-height: 752px;
-  padding-top: 282px;
-  background-image: url("../../img/about/about-bg.png");
-  background-position: right 252px;
-  background-repeat: no-repeat;
+  padding-top: 252px;
+  // background-image: url("../../img/about/about-bg.png");
+  // background-position: right 252px;
+  // background-repeat: no-repeat;
+
+  &__wrapper {
+    min-width: 635px;
+  }
 
   &__descr {
     max-width: 635px;
@@ -38,5 +45,11 @@
       color: $dark-grey;
       text-align: center;
     }
+  }
+
+  &__img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
   }
 }

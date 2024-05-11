@@ -1,9 +1,16 @@
 .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   min-height: 711px;
   padding-top: 50px;
-  background-image: url("../../img/main/main-bg.png");
-  background-position: right 0;
-  background-repeat: no-repeat;
+  // background-image: url("../../img/main/main-bg.png");
+  // background-position: right 0;
+  // background-repeat: no-repeat;
+
+  &__wrapper {
+    max-width: 530px;
+  }
 
   &__title {
     position: relative;
@@ -24,5 +31,11 @@
 
   &__btn {
     margin-top: 60px;
+  }
+
+  &__img {
+    width: 661px;
+    height: 661px;
+    object-fit: cover;
   }
 }
