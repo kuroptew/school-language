@@ -1,4 +1,6 @@
 .form {
+  display: flex;
+  align-items: center;
   &__input {
     width: 450px;
     padding: 27px 33px;
