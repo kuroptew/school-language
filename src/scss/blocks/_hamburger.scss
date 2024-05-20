@@ -1,0 +1,19 @@
+.hamburger {
+  width: 30px;
+  height: 17px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #39515E;
+
+    &:last-child {
+      width: 66%;
+    }
+  }
+}
