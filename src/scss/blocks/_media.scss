@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1599px) {
   .container {
     width: 932px;
   }
@@ -23,12 +23,20 @@
 
   .btn {
     padding: 0 20px;
+    width: 196px;
 
     &_light {
       width: 160px;
-      height: 50px;
+      min-height: 50px;
       font-size: 18px;
       line-height: 27px;
+    }
+
+    &_big {
+      width: 298px;
+      min-height: 80px;
+      font-size: 24px;
+      line-height: 36px;
     }
   }
 
@@ -36,6 +44,15 @@
     &_fz64 {
       font-size: 48px;
       line-height: 64px;
+    }
+
+    &_fz48 {
+      font-size: 36px;
+      line-height: 80px;
+    }
+
+    &_fz30 {
+      font-size: 22px;
     }
   }
 
@@ -67,12 +84,70 @@
     }
   }
 
-  .btn {
-    &_big {
-      width: 298px;
-      height: 80px;
-      font-size: 24px;
-      line-height: 36px;
+  .skills {
+    padding-top: 72px;
+
+    &__list {
+      margin-top: 52px;
+      gap: 13px;
+      grid-template-columns: repeat(4, 303px);
+      grid-template-rows: minmax(441px, auto) minmax(241px, auto);
+    }
+
+    &__item {
+      padding-top: 180px;
+      padding-bottom: 0;
+
+      &_vertical {
+        padding-top: 260px;
+      }
+
+      &_horizontal {
+        padding-top: 4px;
+
+        .skills__descr {
+          max-width: 290px;
+        }
+      }
+
+      .btn {
+        bottom: 30px;
+      }
+    }
+
+    &__content {
+      padding: 0 30px 110px 30px;
+    }
+
+    &__img {
+      &_speaking {
+        width: 260px;
+        height: 260px;
+      }
+
+      &_writing {
+        right: 10px;
+        width: 205px;
+        height: 205px;
+      }
+
+      &_reading {
+        top: 16px;
+        width: 243px;
+        height: 162px;
+      }
+
+      &_listening {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 254px;
+        height: 169px;
+      }
+    }
+
+    &__descr {
+      font-size: 14px;
+      line-height: 21px;
     }
   }
 }
@@ -134,9 +209,17 @@
   }
 
   .title {
-    &__fz64 {
+    &_fz64 {
       font-size: 36px;
       line-height: 45px;
+    }
+
+    &_fz48 {
+      font-size: 30px;
+    }
+
+    &_fz30 {
+      font-size: 20px;
     }
   }
 
@@ -165,18 +248,91 @@
   }
 
   .btn {
+    width: 178px;
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 50px;
+
     &_big {
       width: 236px;
-      height: 65px;
+      min-height: 65px;
       font-size: 18px;
       line-height: 27px;
+    }
+  }
+
+  .skills {
+    padding-top: 56px;
+
+    &__list {
+      margin-top: 37px;
+      gap: 13px;
+      grid-template-columns: repeat(4, 224px);
+      grid-template-rows: minmax(441px, auto) minmax(210px, auto);
+    }
+
+    &__item {
+      padding-top: 180px;
+
+      &_vertical {
+        padding-top: 247px;
+      }
+
+      &_horizontal {
+        padding-top: 4px;
+
+        .skills__descr {
+          max-width: 250px;
+        }
+      }
+    }
+
+    &__content {
+      padding: 0 19px 85px 19px;
+    }
+
+    &__img {
+      &_speaking {
+        top: 30px;
+        width: 214px;
+        height: 214px;
+      }
+
+      &_writing {
+        right: 10px;
+        width: 200px;
+        height: 200px;
+      }
+
+      &_reading {
+        top: 34px;
+        width: 216px;
+        height: 144px;
+      }
+
+      &_listening {
+        top: 100%;
+        transform: translateY(calc(-100% - 18px));
+        width: 202px;
+        height: 134px;
+      }
+    }
+
+    &__descr {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .btn {
+      bottom: 25px;
     }
   }
 }
 
 @media screen and (max-width: 766px) {
   .container {
-    width: 510px;
+    width: 100%;
+    padding: 0 32px;
   }
 
   .hamburger {
@@ -221,17 +377,89 @@
     }
   }
 
+  .title {
+    &_fz30 {
+      font-size: 18px;
+    }
+  }
+
   .btn {
+    width: 200px;
+
     &_big {
       width: 305px;
-      height: 75px;
+      min-height: 75px;
+    }
+  }
+
+  .skills {
+    padding-top: 96px;
+
+    &__list {
+      margin-top: 34px;
+      gap: 30px;
+      justify-content: center;
+      grid-template-columns: repeat(2, 240px);
+      grid-template-rows: minmax(534px, auto);
+      grid-auto-rows: minmax(534px, auto);
+    }
+
+    &__item {
+      padding-top: 170px;
+
+      &_vertical {
+        grid-row: unset;
+      }
+
+      &_horizontal {
+        grid-column: unset;
+      }
+
+      &__descr {
+        width: 100%;
+      }
+    }
+
+    &__content {
+      padding: 0 15px 110px 15px;
+    }
+
+    &__img {
+      &_speaking {
+        top: 0;
+        width: 185px;
+        height: 185px;
+      }
+
+      &_writing {
+        top: 5px;
+        right: 35px;
+        width: 182px;
+        height: 182px;
+      }
+
+      &_reading {
+        top: 30px;
+        width: 198px;
+        height: 132px;
+      }
+
+      &_listening {
+        top: 0;
+        transform: translateY(38px);
+        width: 206px;
+        height: 137px;
+      }
+    }
+
+    .btn {
+      bottom: 36px;
     }
   }
 }
 
 @media screen and (max-width: 574px) {
   .container {
-    width: 100%;
     padding: 0 15px;
   }
 
@@ -248,6 +476,10 @@
     &_fz64 {
       font-size: 24px;
       line-height: 36px;
+    }
+
+    &_fz48 {
+      font-size: 24px;
     }
   }
 
@@ -277,10 +509,77 @@
 
   .btn {
     &_big {
-      width: 289px;
+      width: 100%;
+      max-width: 320px;
       height: 60px;
       font-size: 16px;
       line-height: 24px;
+    }
+  }
+
+  .skills {
+    padding-top: 50px;
+
+    &__list {
+      margin-top: 32px;
+      gap: 20px;
+      grid-template-columns: 290px;
+      grid-auto-rows: minmax(473px, auto);
+    }
+
+    &__item {
+      padding-top: 200px;
+
+      &_vertical {
+        grid-row: unset;
+      }
+
+      &_horizontal {
+        grid-column: unset;
+      }
+
+      &__descr {
+        width: 100%;
+      }
+    }
+
+    &__img {
+      &_speaking {
+        top: 0;
+        width: 213px;
+        height: 213px;
+      }
+
+      &_writing {
+        top: 16px;
+        right: 44px;
+        width: 204px;
+        height: 204px;
+      }
+
+      &_reading {
+        top: 30px;
+        right: 30px;
+        width: 236px;
+        height: 157px;
+      }
+
+      &_listening {
+        top: 33px;
+        right: 30px;
+        transform: unset;
+        width: 232px;
+        height: 154px;
+      }
+    }
+
+    &__descr {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .btn {
+      bottom: 45px;
     }
   }
 }

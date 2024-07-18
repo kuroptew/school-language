@@ -6,7 +6,7 @@
   }
 
   &__list {
-    padding-top: 96px;
+    margin-top: 96px;
     display: grid;
     grid-template-columns: repeat(4, 435px);
     grid-template-rows: minmax(532px, auto) minmax(343px, auto);
@@ -31,6 +31,7 @@
       padding-top: 430px;
       grid-row: 1 / 3;
     }
+
     &_horizontal {
       padding-top: 44px;
       grid-column: 2 / 4;
@@ -42,29 +43,39 @@
   }
 
   &__img {
+    object-fit: cover;
+
     &_speaking {
       position: absolute;
       top: 35px;
       left: 50%;
       transform: translateX(-50%);
+      width: 390px;
+      height: 390px;
     }
 
     &_writing {
       position: absolute;
       top: 0;
       right: 34px;
+      width: 293px;
+      height: 293px;
     }
 
     &_reading {
       position: absolute;
       top: 0;
       left: 0;
+      width: 371px;
+      height: 247px;
     }
 
     &_listening {
       position: absolute;
       top: 44px;
       right: 20px;
+      width: 382px;
+      height: 255px;
     }
   }
 
