@@ -150,6 +150,40 @@
       line-height: 21px;
     }
   }
+
+  .about {
+    padding-top: 106px;
+    min-height: unset;
+
+    &__wrapper {
+      width: 525px;
+    }
+
+    &__descr {
+      margin-top: 13px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__list {
+      margin-top: 16px;
+      gap: 60px;
+    }
+
+    &__count {
+      font-size: 30px;
+    }
+
+    &__name {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__img {
+      width: 336px;
+      height: 336px;
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -327,6 +361,39 @@
       bottom: 25px;
     }
   }
+
+  .about {
+    padding-top: 52px;
+
+    &__wrapper {
+      width: 320px;
+    }
+
+    &__descr {
+      margin-top: 0;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &__list {
+      margin-top: 32px;
+      gap: 45px;
+    }
+
+    &__count {
+      font-size: 22px;
+    }
+
+    &__name {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    &__img {
+      width: 295px;
+      height: 295px;
+    }
+  }
 }
 
 @media screen and (max-width: 766px) {
@@ -456,6 +523,48 @@
       bottom: 36px;
     }
   }
+
+  .about {
+    padding-top: 187px;
+    flex-direction: column;
+
+    &__wrapper {
+      order: 2;
+      position: relative;
+      margin-top: 25px;
+      width: 100%;
+    }
+
+    &__title {
+      position: absolute;
+      top: calc(-352px - 80px - 25px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__descr {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    &__list {
+      margin-top: 20px;
+      gap: unset;
+      width: 430px;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    &__count {
+      font-size: 24px;
+    }
+
+    &__img {
+      order: 1;
+      width: 352px;
+      height: 352px;
+    }
+  }
 }
 
 @media screen and (max-width: 574px) {
@@ -580,6 +689,46 @@
 
     .btn {
       bottom: 45px;
+    }
+  }
+
+  .about {
+    padding-top: 154px;
+    flex-direction: column;
+
+    &__wrapper {
+      order: 2;
+      position: relative;
+      width: 100%;
+    }
+
+    &__title {
+      position: absolute;
+      top: calc(-283px - 80px - 25px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__descr {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    &__list {
+      margin-top: 16px;
+      width: 100%;
+      gap: 23px;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__count {
+      line-height: 60px;
+    }
+
+    &__img {
+      width: 283px;
+      height: 283px;
     }
   }
 }

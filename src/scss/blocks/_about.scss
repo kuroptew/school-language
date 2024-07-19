@@ -4,12 +4,9 @@
   align-items: center;
   min-height: 752px;
   padding-top: 252px;
-  // background-image: url("../../img/about/about-bg.png");
-  // background-position: right 252px;
-  // background-repeat: no-repeat;
 
   &__wrapper {
-    min-width: 635px;
+    width: 635px;
   }
 
   &__descr {
@@ -24,27 +21,24 @@
   &__list {
     margin-top: 20px;
     display: flex;
-    gap: 100px;
+    gap: 90px;
     list-style-type: none;
   }
 
-  &__item {
+  &__count {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 80px;
+    color: #2a3246;
+    text-align: center;
+  }
 
-    &-count {
-      font-size: 48px;
-      font-weight: 600;
-      line-height: 80px;
-      color: #2A3246;
-      text-align: center;
-    }
-
-    &-name {
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 30px;
-      color: $dark-grey;
-      text-align: center;
-    }
+  &__name {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $dark-grey;
+    text-align: center;
   }
 
   &__img {
