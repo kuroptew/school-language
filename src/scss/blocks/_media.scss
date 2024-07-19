@@ -33,7 +33,7 @@
     }
 
     &_big {
-      width: 298px;
+      width: 292px;
       min-height: 80px;
       font-size: 24px;
       line-height: 36px;
@@ -182,6 +182,59 @@
     &__img {
       width: 336px;
       height: 336px;
+    }
+  }
+
+  .pricing {
+    padding-top: 125px;
+
+    &__list {
+      margin-top: 10px;
+      grid-template-columns: 298px 270px 275px;
+    }
+
+    &__item {
+      padding-top: 245px;
+      min-height: 440px;
+    }
+
+    &__subtitle {
+      line-height: 34px;
+    }
+
+    &__descr {
+      margin-top: 14px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__img {
+      &_course {
+        width: 222px;
+        height: 222px;
+      }
+
+      &_lesson {
+        width: 267px;
+        height: 195px;
+      }
+
+      &_webinar {
+        width: 242px;
+        height: 242px;
+      }
+    }
+
+    &__price {
+      padding: 0 12px;
+      width: 205px;
+      font-size: 24px;
+      line-height: 36px;
+
+      span {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
 }
@@ -394,6 +447,51 @@
       height: 295px;
     }
   }
+
+  .pricing {
+    padding-top: 88px;
+
+    &__list {
+      margin-top: 25px;
+      grid-template-columns: 205px 219px 210px;
+    }
+
+    &__item {
+      padding-top: 225px;
+      padding-bottom: 68px;
+      min-height: 430px;
+    }
+
+    &__subtitle {
+      line-height: 28px;
+    }
+
+    &__descr {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &__img {
+      &_course {
+        width: 197px;
+        height: 197px;
+      }
+
+      &_lesson {
+        width: 219px;
+        height: 168px;
+      }
+
+      &_webinar {
+        width: 210px;
+        height: 210px;
+      }
+    }
+
+    &__price {
+      font-size: 22px;
+    }
+  }
 }
 
 @media screen and (max-width: 766px) {
@@ -565,6 +663,47 @@
       height: 352px;
     }
   }
+
+  .pricing {
+    padding-top: 88px;
+
+    &__list {
+      margin-top: 65px;
+      grid-template-columns: 390px;
+      gap: 70px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 268px;
+    }
+
+    &__descr {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    &__img {
+      &_course {
+        width: 260px;
+        height: 260px;
+      }
+
+      &_lesson {
+        width: 314px;
+        height: 241px;
+      }
+
+      &_webinar {
+        width: 253px;
+        height: 253px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 574px) {
@@ -729,6 +868,56 @@
     &__img {
       width: 283px;
       height: 283px;
+    }
+  }
+
+  .pricing {
+    padding-top: 84px;
+
+    &__list {
+      margin-top: 50px;
+      grid-template-columns: 1fr;
+      gap: 70px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      padding-top: 248px;
+      min-height: 425px;
+    }
+
+    &__descr {
+      text-align: center;
+    }
+
+    &__img {
+      &_course {
+        width: 222px;
+        height: 222px;
+      }
+
+      &_lesson {
+        width: 257px;
+        height: 197px;
+      }
+
+      &_webinar {
+        width: 241px;
+        height: 241px;
+      }
+    }
+
+    &__price {
+      padding: 5px 12px;
+      font-size: 18px;
+      line-height: 27px;
+      min-height: 37px;
+
+      span {
+        font-size: 14px;
+        line-height: 21px;
+      }
     }
   }
 }
