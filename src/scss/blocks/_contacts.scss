@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 257px;
+  padding-top: 260px;
   padding-bottom: 133px;
   display: flex;
   justify-content: space-between;
@@ -7,6 +7,12 @@
 
   &__wrapper {
     max-width: 776px;
+  }
+
+  &__img {
+    width: 477px;
+    height: 429px;
+    object-fit: cover;
   }
 
   &__descr {
