@@ -17,7 +17,6 @@ function toSection(nameSection) {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     section.scrollIntoView({ behavior: "smooth" });
-    navMenu.classList.remove("nav-menu_active");
     menu.classList.remove("menu_active");
   });
 }
